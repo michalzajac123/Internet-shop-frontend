@@ -1,14 +1,5 @@
 import React from 'react';
-export interface SubCategory {
-  name: string;
-  path: string;
-}
-
-export interface Category {
-  name: string;
-  path: string;
-  subCategories: SubCategory[];
-}
+import { Category } from '../../utils/categoryTypes';
 import DesktopCategoryDropdown from './DesktopCategoryDropdown';
 import MoreDropdown from './MoreDropdown';
 

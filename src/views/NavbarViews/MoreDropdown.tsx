@@ -1,16 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-export interface SubCategory {
-  name: string;
-  path: string;
-}
-
-export interface Category {
-  name: string;
-  path: string;
-  subCategories: SubCategory[];
-}
+import { Category } from '../../utils/categoryTypes';
 
 interface MoreDropdownProps {
   categories: Category[];
