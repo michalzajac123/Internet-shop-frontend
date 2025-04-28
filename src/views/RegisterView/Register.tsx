@@ -32,7 +32,7 @@ const Register: React.FC = () => {
     setErrorMessage("");
 
     try {
-      const response = await axios.post("https://your-api-url.com/register", {
+      const response = await axios.post("http://localhost:3000/user/register", {
         name: formData.name,
         surname: formData.surname,
         gender: formData.gender,
